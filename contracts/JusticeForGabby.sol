@@ -33,7 +33,7 @@ contract JusticeForGabby is Context, IERC20, Ownable {
     }
 
     uint256 private constant MAX = ~uint256(0);
-    uint256 private constant _tTotal = 1371.783319 * 10**6 * 10**9;
+    uint256 private constant _tTotal = 1371783319000000000;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -51,7 +51,7 @@ contract JusticeForGabby is Context, IERC20, Ownable {
     uint256 public _maintenanceFee = 50;
     uint256 private _previousMaintenanceFee = _maintenanceFee;
 
-    uint256 public _maxTxAmount = 1371.783319 * 10**6 * 10**9; 
+    uint256 public _maxTxAmount = 1071783319000000000; 
     uint256 private constant _TIMELOCK = 0; //31556926 1 year
 
     event TaxFeePercentChanged(uint256 oldValue, uint256 newValue);
